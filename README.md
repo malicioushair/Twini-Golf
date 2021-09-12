@@ -16,6 +16,12 @@ After installing [Mingw64](https://sourceforge.net/projects/mingw-w64/files/Tool
 g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I C:/SDL2-w64/include && g++ *.o -o bin/release/main -s -L C:/SDL2-w64/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer && start bin/release/main
 ```
 The compiled ``.exe`` is located in ``./bin``. For it to run, you must copy the ``./res`` folder as well as all ``.dll`` files from your SDL installation to its directory.
+
+### Windows Conan + Cmake for Visual Studio
+- Get conan from ``pip`` or [conan.io](https://conan.io/)
+- Get Cmake from [cmake.org](https://cmake.org/download/)
+- Generate Visual Studio solution with Cmake
+
 ### Linux
 After installing the dev packages of SDL2 for your distribution, execute the following command in the project's root directory:
 ```
